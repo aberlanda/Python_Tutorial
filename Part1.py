@@ -18,4 +18,5 @@ if the_world_is_flat:
 5**2 #power operator
 width=57
 height = 89
-width*height
+print("The area of the rectagle is:")
+print(width*height)
