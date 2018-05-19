@@ -13,9 +13,12 @@ console.toolbox = [{'autosave': False,
                     'pseudo_tty': False,
                     'raise_panel': True,
                     'title': None}]
-proj.file-list = [loc('Part1.py')]
+proj.file-list = [loc('Part1.py'),
+                  loc('Part2.py')]
 proj.file-type = 'normal'
 [user attributes]
+edit.file-encoding = {loc('Part2'): 'UTF-8',
+                      loc('Part2.py'): 'UTF-8'}
 guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'windows': [{'name': '4F0RtvmbsYEz9erWyw0QlqGAT0'\
         'pQtcla',
@@ -56,7 +59,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                  'primary_view_state': {'area': 'wide',
         'constraint': None,
         'current_pages': [3,
-                          3],
+                          1],
         'notebook_display': 'normal',
         'notebook_percent': 0.33665008291873966,
         'override_title': None,
@@ -114,19 +117,107 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
         -1,
         -1),
                        'attrib-starts': [],
-                       'first-line': 0L,
+                       'first-line': 203L,
                        'folded-linenos': [],
-                       'history': {},
+                       'history': {None: ['a, b = 0, 1\nwhile b<10:\n    pri'\
+        'nt(b)\n    a, b = b, a+b\n',
+        "a, b = 0, 1\nwhile b<10:\n    print(b, end=',')\n    a, b = b, a+b"\
+        "\n",
+        "a, b = 0, 1\nwhile b<30:\n    print(b, end=',')\n    a, b = b, a+b"\
+        "\n",
+        '32\n',
+        '0\n',
+        '-65\n',
+        "x = int(input(\"Please enter a positive integer: \"))\nif x<0:\n   "\
+        " x=0\n    print(\"Since the integer is negative it was changed to 0"\
+        "\")\nelif x==0:\n    print('Zero')\nelif x>0:\n    print('The numbe"\
+        "r you choose is', x)\n",
+        '6.3\n',
+        'for w in words:  # Loop over a slice copy of the entire list.\n    '\
+        'if len(w) > 6:\n        words.insert(0, w)\n',
+        "words = ['casa', 'zucchina', 'ruttolibero']\nfor w in words:\n    p"\
+        "rint(w, len(w))\n#Suppose now I want to modify my list: I want to r"\
+        "eplicate words shorter that a given threshold\nfor w in words[:]:  "\
+        "# Loop over a slice copy of the entire list, otherwise the loops is"\
+        " infinite.\n    if len(w) > 6:\n        words.insert(0, w)\n",
+        'for w in words[:]:  # Loop over a slice copy of the entire list, ot'\
+        'herwise the loops is infinite.\n    if len(w) > 6:\n        words.i'\
+        'nsert(0, w)\n',
+        "words = ['casa', 'zucchina', 'ruttolibero']\nfor w in words:\n    p"\
+        "rint(w, len(w))\n",
+        'for w in words[:]:  # Loop over a slice copy of the entire list, ot'\
+        'herwise the loops is infinite.\n    if len(w) < 6:\n        words.i'\
+        'nsert(0, w)\nwords\n',
+        'words\n',
+        'print(words)\n',
+        "words = ['casa', 'zucchina', 'ruttolibero']\n",
+        "for i in range(len[words]):\n    print(word[i], end=',')\n",
+        "for i in range(len[words]):\n    print(words[i], end=',')\n",
+        'for i in range(len[words]):\n    print(words[i])\n',
+        "for i in range(len(words)):\n    print(words[i], end=',')\n",
+        'for n in range(2,10):\n    for x in range (2,n):\n        if n%x==0'\
+        ':\n            print(n, "equals", x, "*", n//x)\n            break '\
+        '#if the condition hold for a number x then the loop break\n        '\
+        'else #n%x != 0 for every x\n        print(n, " is a prime number")'\
+        '\n',
+        'for n in range(2,10):\n    for x in range (2,n):\n        if n%x==0'\
+        ':\n            print(n, "equals", x, "*", n//x)\n            break '\
+        '#if the condition hold for a number x then the loop break\n        '\
+        'else: #n%x != 0 for every x\n        print(n, " is a prime number")'\
+        '\n',
+        "for n in range(2,10):\n    for x in range (2,n):\n        if n%x==0"\
+        ":\n            print(n, 'equals', x, '*', n//x)\n            break "\
+        "#if the condition hold for a number x then the loop break\n        "\
+        "else: #n%x != 0 for every x\n        print(n, ' is a prime number')"\
+        "\n",
+        "for n in range(2,10):\n    for x in range (2,n):\n        if n%x==0"\
+        ":\n            print(n, 'equals', x, '*', n//x)\n            break "\
+        "#if the condition hold for a number x then the loop break\n    else"\
+        ": #n%x != 0 for every x\n        print(n, ' is a prime number')\n",
+        "for n in range(2,10):\n    for x in range (2,n):\n        if n%x==0"\
+        ":\n            print(n, 'equals', x, '*', n//x)\n            break "\
+        "#if the condition hold for a number x then the loop break\n        "\
+        "else: #n%x != 0 for every x\n            print(n, ' is a prime numb"\
+        "er')\n",
+        'for x in range(2,n):\n    if n%%x == 0:\n        print(n, "is not a'\
+        ' prime number")\n        break\n    else:\n        print(n, "is a p'\
+        'rime number")\n',
+        "n=int(\"Give me an integer number and I'll tell you if it's prime. "\
+        "The number is: \")\nfor x in range(2,n):\n    if n%%x == 0:\n      "\
+        "  print(n, \"is not a prime number\")\n        break\n    else:\n  "\
+        "      print(n, \"is a prime number\")\n    \n",
+        "n=int(\"Give me an integer number and I'll tell you if it's prime. "\
+        "The number is: \")\n",
+        "n=int(input(\"Give me an integer number and I'll tell you if it's p"\
+        "rime. The number is: \"))\nfor x in range(2,n):\n    if n%%x == 0:"\
+        "\n        print(n, \"is not a prime number\")\n        break\n    e"\
+        "lse:\n        print(n, \"is a prime number\")\n",
+        "n=int(input(\"Give me an integer number and I'll tell you if it's p"\
+        "rime. The number is: \"))\n",
+        '17\n',
+        'for x in range(2,n):\n    if n%%x == 0:\n        print(n, "is not a'\
+        ' prime number")\n        break\n    else:\n        print(n, "is a p'\
+        'rime number")\n    \n',
+        "n=int(input(\"Give me an integer number and I'll tell you if it's p"\
+        "rime. The number is: \"))\nfor x in range(2,n):\n    if n%x==0:\n  "\
+        "      print(n, \"is not a prime number\")\n        break\n    else:"\
+        "\n        print(n, \"is a prime number\")\n",
+        '7\n',
+        "n=int(input(\"Give me an integer number and I'll tell you if it's p"\
+        "rime. The number is: \"))\nfor x in range(2,n):\n    if n%x==0:\n  "\
+        "      print(n, \"is not a prime number\")\n        break\nelse:\n  "\
+        "      print(n, \"is a prime number\")\n",
+        '5482189637\n']},
                        'launch-id': None,
-                       'sel-line': 3L,
-                       'sel-line-start': 139L,
-                       'selection_end': 139L,
-                       'selection_start': 139L,
+                       'sel-line': 207L,
+                       'sel-line-start': 7343L,
+                       'selection_end': 7343L,
+                       'selection_start': 7343L,
                        'zoom': 0L}),
                      ('messages',
                       'wide',
                       2,
-                      {}),
+                      {'current-domain': 0}),
                      ('os-command',
                       'wide',
                       1,
@@ -285,9 +376,29 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                            'index': -1,
                            'top': 0,
                            'top-left-pos': 1455}},
-         1526571245.913743]],
-        15),
-        'current-loc': loc('Part1.py'),
+         1526571245.913743],
+        [loc('Part1.py'),
+         {'attrib-starts': [],
+          'first-line': 7L,
+          'folded-linenos': [],
+          'sel-line': 20L,
+          'sel-line-start': 447L,
+          'selection_end': 454L,
+          'selection_start': 454L,
+          'zoom': 0L},
+         1526650247.97741],
+        [loc('Part2.py'),
+         {'attrib-starts': [],
+          'first-line': 0L,
+          'folded-linenos': [],
+          'sel-line': 0L,
+          'sel-line-start': 0L,
+          'selection_end': 0L,
+          'selection_start': 0L,
+          'zoom': 0L},
+         1526650268.343209]],
+        17),
+        'current-loc': loc('Part2.py'),
         'editor-state-list': [(loc('../../../../usr/lib/wingide-personal6/resources/doc/en/TOC.idx'),
                                {'displayed-index': -1,
                                 'viewer-state': {'history': [-1,
@@ -306,13 +417,24 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                                 'sel-line-start': 447L,
                                 'selection_end': 454L,
                                 'selection_start': 454L,
+                                'zoom': 0L}),
+                              (loc('Part2.py'),
+                               {'attrib-starts': [],
+                                'first-line': 43L,
+                                'folded-linenos': [],
+                                'sel-line': 53L,
+                                'sel-line-start': 2037L,
+                                'selection_end': 2041L,
+                                'selection_start': 2041L,
                                 'zoom': 0L})],
-        'has-focus': False,
+        'has-focus': True,
         'locked': False},
         [loc('../../../../usr/lib/wingide-personal6/resources/doc/en/TOC.idx'),
-         loc('Part1.py')]),
+         loc('Part1.py'),
+         loc('Part2.py')]),
                                'open_files': [u'../../../../usr/lib/wingide-personal6/resources/doc/en/TOC.idx',
-        u'Part1.py']},
+        u'Part1.py',
+        u'Part2.py']},
         'saved_notebook_display': None,
         'split_percents': {0: 0.5},
         'splits': 2,
@@ -325,9 +447,10 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                  'user_data': {}},
         'window-alloc': (65,
                          24,
-                         1275,
-                         733)}]}
-guimgr.recent-documents = [loc('Part1.py')]
+                         1273,
+                         736)}]}
+guimgr.recent-documents = [loc('Part2'),
+                           loc('Part1.py')]
 proj.build-cmd = {None: ('default',
                          None)}
 proj.env-vars = {None: ('default',

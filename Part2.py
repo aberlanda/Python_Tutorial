@@ -52,4 +52,51 @@ for x in range(2,n):
 else:
         print(n, "is a prime number")
     
-#continue
+#continue: if a condition is verified, do something and the pass to the following command
+#pass: skip a command useful when I want to define something as a class or a function but I don't know yet what to write --> pass
+
+#4.6 Defining function
+#Define a function which returns if a number is prime or not
+def prime(n):
+    for x in range(2,n):
+        if n%x==0:
+            print(n, "is not a prime number")
+            break
+    else:
+            print(n, "is a prime number")
+
+prime(53)
+
+#Define a function which returns the prime n number of the Fibonacci series
+def Fib(n):
+    a, b = 0,1
+    while a<n:
+        print(a, end=', ')
+        a, b = b, a+b
+
+Fib(37)
+
+#BUt previous one is technically a procedure, functions have a return in their definition
+def Fib2(n):
+    a, b = 0,1
+    result = []
+    while a<n:
+        result.append(a) #method that appends to the vector result a value, equivalent to result = result + [a]
+        a, b = b, a+b
+    return result
+#A method is a function that ‘belongs’ to an object and is named obj.methodname, where obj is some object (this may be an expression), and methodname is the name of a method that is defined by the object’s type.
+fib37 = Fib2(37)
+
+#4.7 More on defining Functions
+#Default argument values
+def ask_ok(prompt, retries=4, reminder= 'Ritenta e sarai più fortunato!'):
+    while True: #means that it continues to repeat the operation, like an infinite loop
+        ok=input(prompt)
+        if ok in ('yes', 'ye', 'y'):
+            return True
+        if ok in ('nope', 'nop', 'no', 'n'):
+            return False
+        retries = retries -1
+        if retries <0:
+            raise ValueError('Invalid response user')
+        print(reminder)
