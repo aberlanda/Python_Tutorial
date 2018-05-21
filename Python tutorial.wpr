@@ -116,36 +116,14 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
         -1,
         -1),
                        'attrib-starts': [],
-                       'first-line': 54L,
+                       'first-line': 0L,
                        'folded-linenos': [],
-                       'history': {None: ['def prime(n):\n    for x in range'\
-        '(2,n):\n        if n%x==0:\n            print(n, "is not a prime nu'\
-        'mber")\n            break\n    else:\n            print(n, "is a pr'\
-        'ime number")\n\nprime(53)\n',
-        "def Fib(n):\n    a, b = 0,1\n    while a<n:\n        print(a, end='"\
-        ", ')\n        a, b = b, a+b\n        \n",
-        'Fib(37)\n',
-        'def Fib2(n):\n    a, b = 0,1\n    result = []\n    while a<n:\n    '\
-        '    result.append(a) #append to the vector result a value\n        '\
-        'a, b = b, a+b\n    return result\nfib37 = Fib2(37)\n',
-        'fib37\n',
-        "def ask_ok(prompt, retries=4, reminder= 'Ritenta e sarai pi\xc3\xb9"\
-        " fortunato!'):\n    while True: #means that it continues to repeat "\
-        "the operation, like an infinite loop\n        ok=input(prompt)\n   "\
-        "     if ok in ('yes', 'ye', 'y'):\n            return True\n       "\
-        " if ok in ('nope', 'nop', 'no', 'n'):\n            return False\n  "\
-        "      retries = retries -1\n        if retries <0:\n            rai"\
-        "se ValueError('Invalid response user')\n        print(reminder)\n  "\
-        "      \n",
-        "ask_ok('')\n",
-        'l\n',
-        "ask_ok('ti puzza il culo? (y/n)')\n",
-        'y\n']},
+                       'history': {},
                        'launch-id': None,
-                       'sel-line': 58L,
-                       'sel-line-start': 1504L,
-                       'selection_end': 1504L,
-                       'selection_start': 1504L,
+                       'sel-line': 3L,
+                       'sel-line-start': 139L,
+                       'selection_end': 139L,
+                       'selection_start': 139L,
                        'zoom': 0L}),
                      ('messages',
                       'wide',
@@ -354,12 +332,12 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                               (loc('Part2.py'),
                                {'attrib-starts': [('ask_ok',
         91)],
-                                'first-line': 87L,
+                                'first-line': 93L,
                                 'folded-linenos': [],
-                                'sel-line': 102L,
-                                'sel-line-start': 3754L,
-                                'selection_end': 3754L,
-                                'selection_start': 3754L,
+                                'sel-line': 104L,
+                                'sel-line-start': 3882L,
+                                'selection_end': 3938L,
+                                'selection_start': 3938L,
                                 'zoom': 0L})],
         'has-focus': True,
         'locked': False},
@@ -381,8 +359,8 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                  'user_data': {}},
         'window-alloc': (65,
                          24,
-                         1271,
-                         739)}]}
+                         1269,
+                         742)}]}
 guimgr.recent-documents = [loc('Part2.py'),
                            loc('Part1.py')]
 proj.build-cmd = {None: ('default',

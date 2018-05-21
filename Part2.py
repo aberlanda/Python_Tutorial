@@ -100,3 +100,6 @@ def ask_ok(prompt, retries=4, reminder= 'Ritenta e sarai più fortunato!'):
         if retries <0:
             raise ValueError('Invalid response user')
         print(reminder)
+#Alternative: Keyboard arguments
+# print(my_function.__doc__) print the description of a function you make it using """ ... """
+#my_function.__annotations__ print the not to a function
